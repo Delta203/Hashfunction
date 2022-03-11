@@ -1,4 +1,4 @@
-# Hashfunction
+e# Hashfunction
 python3 32byte hashfunction<br/>
 **Warning! You should not use this hashfunction for serious encryption. This function has not been tested by professionals.**<br/>
 
@@ -11,6 +11,12 @@ from hashfunction import Hash
 foo = Hash()
 # generate hash
 foo.hexHash(inputString: str, printBlocks: bool=False, printBitHash: bool=False)
+```
+```
+$> python launcher.py <words>
+$> python launcher.py -fetch <filename: str> <targetname: str> <maxThreads: int> | fetch password list
+$> python launcher.py -range <filename: str> <start: int> <end: int> | generate password by "a"*n
+$> python launcher.py -collision <filename: str>
 ```
 **Construction:**
 - Converting string to binary ("hello": str ⇒ 110100001100101011011000110110001101111)
