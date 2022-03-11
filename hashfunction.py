@@ -36,8 +36,6 @@ class Hash:
         if printBitHash: print("bithash     :", bitHash, len(bitHash))
         hexHash = self.__numToHex(int(bitHash))
         
-        print(st_len)
-        
         return hexHash
     
     def __stringToBinary(self, st: str) -> int:
