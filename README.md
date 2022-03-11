@@ -1,4 +1,4 @@
-e# Hashfunction
+# Hashfunction
 python3 32byte hashfunction<br/>
 **Warning! You should not use this hashfunction for serious encryption. This function has not been tested by professionals.**<br/>
 
