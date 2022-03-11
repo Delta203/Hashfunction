@@ -18,6 +18,7 @@ $> python launcher.py -fetch <filename: str> <targetname: str> <maxThreads: int>
 $> python launcher.py -range <filename: str> <start: int> <end: int> | generate password by "a"*n
 $> python launcher.py -collision <filename: str>
 ```
+___
 **Construction:**
 - Converting string to binary ("hello": str ⇒ 110100001100101011011000110110001101111)
 - Adding reversed bitString to bitString (⇒ 110100001100101011011000110110001101111111101100011011000110110101001100001011)
