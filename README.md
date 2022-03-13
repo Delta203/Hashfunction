@@ -26,14 +26,14 @@ ___
   (The amount of blocks depents on length of inputString|bitString)
 - Split the long bitString into seperate 512 bit blocks (⇒ list of 512 bit blocks)
 
-![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/pic1.PNG)
+![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/picture1.PNG)
 - Create another list with modulus values of each block(512 bit) % primeKey(very high primenumber * length of inputString)<br/>
   (eg: 110100001100101011011000110110001101111(39 bit) % 31(primeKey) = 6, "6" ⇒ 110110, pad 110110 to 512 bit by repeating)
 
-![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/pic2.PNG)
+![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/picture2.PNG)
 - XOR every block with every block from split list and modulus list
 
-![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/pic3.PNG)
+![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/picture3.PNG)
 - Compress 512 bitString by splitting the block into 256 bit blocks and XOR the two blocks
 - Convert 256 bit block into 32 byte hex
 ```
