@@ -14,9 +14,10 @@ foo.hexHash(inputString: str, printBlocks: bool=False, printBitHash: bool=False)
 ```
 ```
 $> python launcher.py <words>
-$> python launcher.py -fetch <filename: str> <targetname: str> <maxThreads: int> | fetch password list
-$> python launcher.py -range <filename: str> <start: int> <end: int> | generate password by "a"*n
-$> python launcher.py -collision <filename: str>
+$> python launcher.py -fetch <filename: str> <targetname: str> <maxThreads: int> | fetch password list and write hashes into another file
+$> python launcher.py -range <targetname: str> <start: int> <end: int> | generate password by "a"*n and write hashes into a file
+$> python launcher.py -chain <targetname: str> <end: int> | get hash from hash multiple times and write hashes into a file
+$> python launcher.py -collision <filename: str> | check file on hash collisions
 ```
 ___
 **Construction:**
