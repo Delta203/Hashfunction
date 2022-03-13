@@ -64,6 +64,27 @@ elif w.startswith("-range"):
         c+=1
     file.close()
     print("Fetch done. " + str(c-1) + "|" + str(c_-1) + " strings hashed")
+elif w.startswith("-chain"):
+    ftname = sys.argv[2]
+    word = sys.argv[3]
+    firstWord = word
+    maxThreads = 50
+    try: maxThreads = int(sys.argv[4])
+    except: pass
+    print("Chain hashes from 1 word: chain() | word: " + str(word) + "|" + str(maxThreads))
+    time.sleep(1)
+    
+    file = open(ftname, "a", encoding="utf-8")
+    c = 1
+    while c<=maxThreads:
+        val_h = hashFunction.hexHash(word)
+        if len(word) > 16: print(c, word[:16]+"...", val_h)
+        else: print(c, word, val_h)
+        file.write(val_h + "\n")
+        word = val_h
+        c+=1
+    file.close()
+    print("Fetch done. " + str(c-1) + "|" + str(firstWord) + " strings hashed")
 elif w.startswith("-collision"):
     fname = sys.argv[2]
     print("Check hashlist for collisions: " + fname)
