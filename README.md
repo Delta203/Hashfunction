@@ -45,7 +45,7 @@ hash        : 0xa939abeef0d2aa065cbe15b4e7fc57b33c41e3cb1cba8f505a390336da396f34
 process time: 0.0sec
 ```
 ___
-**Speed:**
+**Speed (Laptop 1.2GHz):**
 - {a}^1000  = 0.020067sec sec ⇒ ```0x8b92ce0c089a0b62ffffbd3342630e4c56bd7979c08ba8050132dad650b4609b```
 - {a}^8171  = 0.480313sec sec ⇒ ```0xcfdfb9ef1ee5f95f0853537271ee7bee5889d569ed4d0c97779b72d495c6feb7```
 ___
