@@ -28,7 +28,7 @@ ___
 - Split the long bitString into seperate 512 bit blocks (⇒ list of 512 bit blocks)
 
 ![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/picture1.PNG)
-- Create another list with modulus values of each block(512 bit) % primeKey(very high primenumber * length of inputString)<br/>
+- Create another list with modulus values of each block(512 bit) % primeKey(very high primenumber **[default: 1373]** * length of inputString)<br/>
   (eg: 110100001100101011011000110110001101111(39 bit) % 31(primeKey) = 6, "6" ⇒ 110110, pad 110110 to 512 bit by repeating)
 
 ![](https://raw.githubusercontent.com/Delta203/Hashfunction/main/guideimages/picture2.PNG)
